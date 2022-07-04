@@ -51,7 +51,7 @@ module.exports = {
     let data = {
       namaHP: req.body.namaHP,
       jenisHP: req.body.jenisHP,
-      no_seri: req.body.no_seri,
+      nomor_seri: req.body.nomor_seri,
       tgl_produksi: req.body.tgl_produksi,
     };
     pool.getConnection(function (err, connection) {
@@ -76,7 +76,7 @@ module.exports = {
     let dataEdit = {
       namaHP: req.body.namaHP,
       jenisHP: req.body.jenisHP,
-      no_seri: req.body.no_seri,
+      nomor_seri: req.body.nomor_seri,
       tgl_produksi: req.body.tgl_produksi,
     };
     let id = req.body.id;
