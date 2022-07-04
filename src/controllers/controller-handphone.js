@@ -7,7 +7,6 @@ pool.on("error", (err) => {
 });
 
 module.exports = {
-  // Ambil data semua handphone
   getDataHandphone(req, res) {
     pool.getConnection(function (err, connection) {
       if (err) throw err;
@@ -27,7 +26,6 @@ module.exports = {
       connection.release();
     });
   },
-  // Ambil data handphone berdasarkan ID
   getDataHandphoneByID(req, res) {
     let id = req.params.id;
     pool.getConnection(function (err, connection) {
@@ -49,12 +47,11 @@ module.exports = {
       connection.release();
     });
   },
-  // Simpan data handphone
   addDataHandphone(req, res) {
     let data = {
       namaHP: req.body.namaHP,
       jenisHP: req.body.jenisHP,
-      nomor_seri: req.body.nomor_seri,
+      no_seri: req.body.no_seri,
       tgl_produksi: req.body.tgl_produksi,
     };
     pool.getConnection(function (err, connection) {
@@ -75,12 +72,11 @@ module.exports = {
       connection.release();
     });
   },
-  // Update data handphone
   editDataHandphone(req, res) {
     let dataEdit = {
       namaHP: req.body.namaHP,
       jenisHP: req.body.jenisHP,
-      nomor_seri: req.body.nomor_seri,
+      no_seri: req.body.no_seri,
       tgl_produksi: req.body.tgl_produksi,
     };
     let id = req.body.id;
@@ -102,7 +98,6 @@ module.exports = {
       connection.release();
     });
   },
-  // Delete data handphone
   deleteDataHandphone(req, res) {
     let id = req.body.id;
     pool.getConnection(function (err, connection) {
