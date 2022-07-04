@@ -49,7 +49,7 @@ module.exports = {
       connection.release();
     });
   },
-  // Simpan data karyawan
+  // Simpan data handphone
   addDataHandphone(req, res) {
     let data = {
       namaHP: req.body.namaHP,
@@ -75,7 +75,7 @@ module.exports = {
       connection.release();
     });
   },
-  // Update data karyawan
+  // Update data handphone
   editDataHanphone(req, res) {
     let dataEdit = {
       namaHP: req.body.namaHP,
@@ -102,7 +102,7 @@ module.exports = {
       connection.release();
     });
   },
-  // Delete data karyawan
+  // Delete data
   deleteDataHandphone(req, res) {
     let id = req.body.id;
     pool.getConnection(function (err, connection) {
