@@ -1,5 +1,5 @@
-const informasi_hp = require("./controller-handphone");
+const sql6503915 = require("./controller-handphone");
 
 module.exports = {
-  informasi_hp,
+  sql6503915,
 };
