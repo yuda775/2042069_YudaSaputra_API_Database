@@ -11,7 +11,7 @@ router.get("/handphone/:id", sql6503915.getDataHandphoneByID);
 router.post("/handphone/add", sql6503915.addDataHandphone);
 
 //POST localhost:8080/handphone/2 => Edit data informasi handphone
-router.post("/handphone/edit", sql6503915.editDataHanphone);
+router.post("/handphone/edit", sql6503915.editDataHandphone);
 
 //POST localhost:8080/handphone/delete => Delete data handphone
 router.post("/handphone/delete/", sql6503915.deleteDataHandphone);
