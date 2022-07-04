@@ -76,7 +76,7 @@ module.exports = {
     });
   },
   // Update data handphone
-  editDataHanphone(req, res) {
+  editDataHandphone(req, res) {
     let dataEdit = {
       namaHP: req.body.namaHP,
       jenisHP: req.body.jenisHP,
@@ -102,7 +102,7 @@ module.exports = {
       connection.release();
     });
   },
-  // Delete data
+  // Delete data handphone
   deleteDataHandphone(req, res) {
     let id = req.body.id;
     pool.getConnection(function (err, connection) {

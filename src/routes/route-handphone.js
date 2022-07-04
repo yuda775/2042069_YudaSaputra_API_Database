@@ -5,7 +5,7 @@ const { handphone } = require("../controllers");
 router.get("/handphone/", handphone.getDataHandphone);
 
 // GET localhost:8080/handphone/2 => Ambil data semua informasi handphone berdasarkan id
-router.post("/handphone/:id", handphone.getDataHandphoneByID);
+router.get("/handphone/:id", handphone.getDataHandphoneByID);
 
 //POST localhost:8080/handphone/add => Tambah data informasi handphone ke database
 router.post("/handphone/add", handphone.addDataHandphone);
